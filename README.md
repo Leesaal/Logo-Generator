@@ -39,6 +39,7 @@ https://user-images.githubusercontent.com/118930290/230496411-d5529ee2-e484-4eb3
 
 Please install the following:
 npm install
+
 npm run test
 
 ## Usage
