@@ -1,6 +1,15 @@
 # Logo-Generator
 
-## Table of Contents
+#### Table of Contents 
+[Description](#description)  
+[Result](#result)
+[JEST Testing](#JEST testing)
+[Walkthrough](#walkthrough)
+[Installation](#installation)
+[Usage](#usage)
+[License](#license)
+[Tests](#tests)
+[Contact Details](#contact details)
 
 ## Description
 
@@ -18,7 +27,7 @@ This program is a command line interface that takes user input to generate a log
 
 https://user-images.githubusercontent.com/118930290/230496411-d5529ee2-e484-4eb3-a710-642cf8605a97.mov
 
-## Installation
+## Installation
 
 Please install the following:
 npm install
