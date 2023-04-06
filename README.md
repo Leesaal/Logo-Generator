@@ -1,14 +1,22 @@
 # Logo-Generator
 
 #### Table of Contents 
-[Description](#description)  
+[Description](#description)
+
 [Result](#result)
+
 [JEST Testing](#JEST-testing)
+
 [Walkthrough](#walkthrough)
+
 [Installation](#installation)
+
 [Usage](#usage)
+
 [License](#license)
+
 [Tests](#tests)
+
 [Contact Details](#contact-details)
 
 ## Description
