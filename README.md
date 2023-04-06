@@ -44,7 +44,7 @@ npm run test
 
 ## Usage
 
-This program can be used to generate a logo.  The user will answer 4 prompts and an svg file of the logo will be created in the examples folder.
+This program can be used to generate a logo.  The user will answer 4 prompts and an svg file of the logo will be created in the RESULTS folder.
 
 ## License
 
