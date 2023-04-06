@@ -1,7 +1,7 @@
 // import required files
 const inquirer = require("inquirer");
-const {Triangle, Circle, Square} = require("./Shapes/shapes");
-const fs = require("./node_modules/graceful-fs/graceful-fs")
+const {Triangle, Circle, Square} = require("./lib/shapes");
+const fs = require("fs");
 
 class Logo{
     constructor() {
@@ -45,3 +45,15 @@ const questions = [
         message: "Enter a colour for the shape: "
     }
 ];
+
+function init() {
+    inquirer
+    .prompt (questions)
+    .then ((answers) => {
+        eval("svg = new " + answers.shape + "(answers.shape, answers.shapeColour, answers.text, answers.textColour)");
+        fs.writeFile("logo.svg", answers);
+    })
+    .catch((err)=> console.log(err));
+}
+
+init();
