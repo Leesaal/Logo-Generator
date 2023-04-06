@@ -3,13 +3,13 @@
 #### Table of Contents 
 [Description](#description)  
 [Result](#result)
-[JEST Testing](#JEST)
+[JEST Testing](#JEST-testing)
 [Walkthrough](#walkthrough)
 [Installation](#installation)
 [Usage](#usage)
 [License](#license)
 [Tests](#tests)
-[Contact Details](#contact)
+[Contact Details](#contact-details)
 
 ## Description
 
