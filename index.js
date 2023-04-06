@@ -7,12 +7,20 @@ const questions = [
     {
         type: "input",
         name: "text",
-        message: "Enter up to 3 characters: "
+        message: "Enter up to 3 characters: ",
+        validate: function (text){
+            if(text.length > 3) {
+                console.log("\n Input characters of length 3 or under");
+                return false
+            } else {
+                return true
+            }
+        }
     },
     {
         type: "input",
         name: "textColour",
-        message: "Enter a colour for the text: "
+        message: "Enter a colour for the text (OR a hexadecimal number): "
     },
     {
         type: "list",
@@ -23,7 +31,7 @@ const questions = [
     {
         type: "input",
         name: "shapeColour",
-        message: "Enter a colour for the shape: "
+        message: "Enter a colour for the shape (OR a hexadecimal number): "
     }
 ];
 
