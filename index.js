@@ -1,26 +1,7 @@
 // import required files
 const inquirer = require("inquirer");
-const {Triangle, Circle, Square} = require("./lib/shapes");
+const {Shape, Triangle, Circle, Square} = require("./lib/shapes");
 const fs = require("fs");
-
-class Logo {
-    constructor() {
-        this.text = "";
-        this.textColour = "";
-    }
-
-    setShape(shape, shapeColour) {
-        this.shape = shape.showShape(shapeColour);
-    }
-
-    createLogo() {
-        return `<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="200">
-  ${setShape(shape, shapeColour)}
-    <text x="150" y="125" font-size="60" text-anchor="middle" fill="${textColour}">${text}</text>
-  </svg>`
-    }
-
-}
 
 const questions = [
     {
@@ -49,11 +30,12 @@ const questions = [
 
 
 function generateLogo(answers, newLogo) {
+    this.shapeColour = answers.shapeColour;
     this.text = answers.text.toUpperCase();
     this.textColour = answers.textColour;
     fs.writeFile("./examples/logo.svg", `<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="200">
-  ${new Triangle("pink")}
-    <text x="150" y="125" font-size="60" text-anchor="middle" fill="${textColour}">${text}</text>
+  ${newLogo}
+  ${new Shape(shapeColour, text, textColour)}
   </svg>`, (e) => {
     e ? console.log(e) : console.log("Successfully created logo", "Generated logo.svg")
   });
