@@ -33,7 +33,7 @@ function generateLogo(answers, newLogo) {
     this.shapeColour = answers.shapeColour;
     this.text = answers.text.toUpperCase();
     this.textColour = answers.textColour;
-    fs.writeFile("./examples/logo.svg", `<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="200">
+    fs.writeFile("./results/logo.svg", `<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300" height="200">
   ${newLogo}
   ${new Shape(shapeColour, text, textColour)}
   </svg>`, (e) => {
