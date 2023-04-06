@@ -1,0 +1,2 @@
+# shows which files and folders that git should ignore
+node_modules
