@@ -16,6 +16,8 @@ This program is a command line interface that takes user input to generate a log
 
 ## Walkthrough
 
+https://user-images.githubusercontent.com/118930290/230496411-d5529ee2-e484-4eb3-a710-642cf8605a97.mov
+
 ## Installation
 
 Please install the following:
